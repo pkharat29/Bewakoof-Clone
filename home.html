@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="stylesheet" href="/bewakoof/css/all.min.css"> -->
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+    <style>
+        .mainbox {
+            height: 70px;
+            width: 90%;
+            display: flex;
+
+            /* border: 2px solid red; */
+            margin: auto;
+        }
+
+        .logo {
+            /* border: 2px solid black; */
+
+
+            width: 14%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .logo>img {
+
+            width: 100%;
+            cursor: pointer;
+        }
+
+        .categories {
+            display: flex;
+            /* justify-content: center; */
+            align-items: center;
+            gap: 0px;
+            height: auto;
+            /* border: 2px solid brown; */
+            width: 35%;
+            margin-left: 0px;
+
+        }
+
+        .secondbox {
+            /* border: 2px solid greenyellow; */
+            width: 24%;
+
+
+        }
+
+        .search {
+
+            width: 250px;
+            border: 1px solid #ccc;
+            padding: 10px 15px;
+            border-radius: 5px;
+            background-color: #EAEAEA;
+            margin-top: 30px;
+        }
+
+        .fa-solid {
+            margin-top: 15px;
+            cursor: pointer;
+
+        }
+
+        .redirect {
+            text-decoration: none;
+            color: #000000E6;
+        }
+
+        .categories>h3 {
+
+            margin-top: 20px;
+            color: #000000E6;
+            font-size: 13px;
+            font-family: montserrat, sans-serif;
+            vertical-align: middle;
+            /* line-height: 45px; */
+            padding: 0 11px;
+            letter-spacing: 1px;
+            position: relative;
+            cursor: pointer;
+            gap: 10px;
+            margin-left: 15px;
+
+
+
+        }
+
+        .lastbox {
+            /* border: 2px solid teal; */
+            width: 70%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 15px;
+            margin-left: 300px;
+        }
+
+        .login {
+            text-decoration: none;
+            color: #000000E6;
+            /* margin-left: -10px; */
+
+            width: auto;
+            padding: 0 10px;
+            line-height: 50px;
+
+            font-size: 16px;
+            font-family: montserrat, sans-serif;
+            cursor: pointer;
+        }
+
+        .fa-bag-shopping {
+
+            font-size: 25px;
+            cursor: pointer;
+            margin-left: 20px;
+
+
+        }
+
+        .fa-heart {
+            font-size: 25px;
+            /* margin-left: 13px; */
+            cursor: pointer;
+
+        }
+
+        .fa-grip-lines-vertical {
+            font-size: 25px;
+            cursor: pointer;
+
+        }
+
+        .search {
+
+            width: 250px;
+            border: 1px solid #ccc;
+            padding: 10px 15px;
+            border-radius: 5px;
+            margin-top: 10px;
+            background-color: #EAEAEA;
+        }
+
+
+
+        .banner1 {
+            /* border: 1px solid red; */
+            height: 70px;
+            width: 100%;
+            margin: auto;
+            margin-top: 15px;
+        }
+
+        .banner1>img {
+            width: 100%;
+            height: 100%;
+        }
+
+        .container {
+            display: flex;
+            margin: auto;
+            height: 500px;
+            width: 100%;
+            /* border: 2px solid red; */
+
+        }
+
+        .container>div {
+            height: 500px;
+            width: 50%;
+            /* transition: 1s; */
+            /* border: 2px solid blue; */
+        }
+
+        .container>div>img {
+            width: 100%;
+            height: 100%;
+            cursor: pointer;
+
+
+
+
+        }
+
+
+        .strip {
+            /* border: 1px solid red; */
+            margin: auto;
+            width: 100%;
+            height: 80px;
+            margin-top: 0px;
+
+
+        }
+
+        .strip>img {
+            height: 100%;
+            width: 100%;
+
+        }
+
+        .redirect {
+            text-decoration: none;
+            color: #000000E6;
+        }
+
+        .bewakoof {
+            width: 90%;
+            height: 40px;
+
+
+        }
+
+        .box {
+            transition: 0.5s;
+            position: relative;
+        }
+
+        .box:hover {
+            z-index: 1;
+            transform: scale(1.05);
+        }
+
+        .line5 {
+
+            /* border: 2px solid blue; */
+            height: 350px;
+            /* margin: auto; */
+            margin-top: 8px;
+            display: grid;
+            gap: 40px 40px;
+            grid-template-columns: repeat(3, 300px);
+            grid-template-rows: repeat(1, 300px);
+            background-color: #181818;
+
+        }
+
+        .line5>div {
+            /* border: 1px solid red; */
+            margin-top: 40px;
+            margin-left: 30px;
+
+        }
+
+        .bew_img {
+            width: 100%;
+            margin-top: -10px;
+        }
+
+        .customerser {
+            margin-top: -20px;
+            margin-left: 90px;
+            color: #fdd835;
+            font-family: montserrat, sans-serif;
+            font-weight: 400;
+        }
+
+        .line5>div>h5 {
+            margin-left: 30px;
+            color: whitesmoke;
+            font-family: montserrat, sans-serif;
+            font-weight: 400;
+        }
+
+        .comp {
+            text-align: center;
+            color: #fdd835;
+            font-family: montserrat, sans-serif;
+            font-weight: 400;
+            margin-top: 90px;
+            margin-left: -120px;
+
+
+        }
+
+        .icon {
+            content: "\E90E";
+        }
+
+        a>i {
+            font-size: 22px;
+            margin-left: 20px;
+            color: rgb(43, 42, 42);
+        }
+
+        a {
+            font-size: 15px;
+            margin-left: 5px;
+            color: rgb(58, 55, 55);
+            text-decoration: none;
+        }
+
+        footer span {
+            color: whitesmoke;
+            font-family: montserrat, sans-serif;
+            font-weight: 400;
+            margin: 12px;
+            padding-top: 22px;
+            line-height: 3;
+
+        }
+
+        footer i {
+            color: whitesmoke;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="mainbox">
+        <div class="logo">
+            <a href="home.html"> <img class="bewakoof"
+                    src="https://images.bewakoof.com/web/ic-desktop-pride-bwkf-logo.svg " alt=""></a>
+        </div>
+        <div class="categories">
+            <h3><a class="redirect" href="product1.html">MEN</a></h3>
+            <h3><a href="product2.html" class="redirect">WOMEN</a></h3>
+            <!-- <h3><a href="" class="redirect">MOBILE COVERS</a></h3> -->
+        </div>
+
+        <div class="lastbox">
+            <form action="">
+                <span><a><i class="fa-solid fa-magnifying-glass fa-lg"></i></a></span>
+                <input type="text" class="search" placeholder="Search by product, category or collection">
+
+            </form>
+            <span><a><i class="fa-solid fa-grip-lines-vertical fa-lg "></i></a></span>
+            <a href="signup.html" style="color: black" class="login redirect">Login</a>
+            <span><a href=""><i class="fa-solid fa-heart fa-lg redirect"></i></a></span>
+            <span><a href="cart.html"><i class="fa-solid fa-bag-shopping fa-lg redirect"></i></a></span>
+        </div>
+    </div>
+
+
+    <div class="banner1">
+        <img src="https://images.bewakoof.com/web/Gender-Picker-Banner-desktop-header-v1NEW.jpg" alt="">
+    </div>
+    <div class="container">
+        <div class="box"><img
+                src="https://images.bewakoof.com/web/Gender-Picker-Banner-desktop-mendesktopNEW-1651231162.jpg" alt="">
+        </div>
+        <div class="box"><img
+                src="https://images.bewakoof.com/web/Gender-Picker-Banner-desktop-Womendesktop-1651231163NEW.jpg"
+                alt="">
+        </div>
+    </div>
+
+    <div class="strip">
+        <img src="https://images.bewakoof.com/web/Gender-Picker-Banner-desktop-footer-v1NEW.jpg" alt="">
+    </div>
+
+
+
+
+    <footer>
+        <div class="line5">
+            <div>
+                <a href="home.html"><img class="bew_img"
+                        src="https://dog55574plkkx.cloudfront.net/storelogo/web/Bewakoof.png" alt="" />
+                </a>
+                <h4 class="customerser">CUSTOMER SERVICE</h4>
+                <h5>Contact Us</h5>
+                <h5>Return Order</h5>
+                <h5>Track Order</h5>
+                <h5>Cancel Order</h5>
+            </div>
+
+
+
+            <div>
+                <h4 class="comp">COMPANY</h4>
+                <h5>About Us</h5>
+                <h5>Terms & Conditions</h5>
+                <h5>Blog</h5>
+            </div>
+
+
+            <div class="col-xs-12 noPd">
+                <div class="socialIcoMobile">
+                    <div class="fbInsta">
+                        <a class="whiteText" hreflang="en-us" href="https://www.facebook.com/bewakoofcom"
+                            target="_blank"><i class="fab fa-facebook-square"></i></i><span class="hidden-xs">4.7M
+                                People Likes</span></a>
+                    </div>
+                    <div class="fbInsta">
+                        <a class="whiteText" hreflang="en-us" href="https://www.instagram.com/bewakoofofficial/"
+                            target="_blank"><i class="fab fa-instagram"></i>
+                            <span class="hidden-xs">1M Followers</span></a>
+                    </div>
+                </div>
+                <div>
+                    <a hreflang="en-us" href="https://twitter.com/bewakoof" target="_blank"><i
+                            class="fab fa-twitter"></i></a><a hreflang="en-us"
+                        href="https://www.pinterest.com/bewakoof/" target="_blank"><i
+                            class="fab fa-pinterest"></i></a><a hreflang="en-us"
+                        href="https://www.snapchat.com/add/bewakoof_tv" target="_blank"><i
+                            class="fab fa-snapchat-ghost"></i></a><a hreflang="en-us"
+                        href="https://itunes.apple.com/in/app/bewakoof/id1100190514?mt=8" target="_blank"><i
+                            class="fab fa-apple"></i></i></a><a hreflang="en-us"
+                        href="https://play.google.com/store/apps/details?id=com.bewakoof.bewakoof&amp;hl=en"
+                        target="_blank"><i class="iconAndroid"></i></a>
+                </div>
+            </div>
+
+
+        </div>
+    </footer>
+</body>
+
+</html>

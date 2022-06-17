@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="stylesheet" href="/bewakoof/css/all.min.css"> -->
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+    <style>
+        .home {
+            height: 40px;
+            /* border: 1px solid black; */
+            display: flex;
+            align-items: center;
+            margin-top: 30px;
+        }
+
+        .home>p {
+            font-size: 16px;
+            color: #2D2D2D;
+            margin-top: 20px;
+            margin-left: 100px;
+            font-family: sans-serif;
+            cursor: pointer;
+        }
+
+        .yellowimg {
+            /* border: 1px solid blue; */
+            margin: auto;
+            height: 200px;
+            width: 100%;
+
+
+        }
+
+        .yellowimg>img {
+            width: 100%;
+            height: 100%;
+        }
+
+        .fa-bag-shopping {
+            /* margin-right: -40px; */
+            margin-left: 20px;
+            font-size: 25px;
+            cursor: pointer;
+
+
+        }
+
+        .fa-heart {
+            font-size: 25px;
+            margin-left: 13px;
+            cursor: pointer;
+
+        }
+
+        .label>h3 {
+            color: rgb(45, 45, 45);
+            font: 700 16px montserrat-bold, sans-serif;
+            font-size: 25px;
+            margin-left: 150px;
+            margin-top: 40px;
+        }
+
+
+        /* grid styling starts here */
+
+
+        #productcategory {
+            /* border: 1px solid red; */
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            margin: auto;
+            width: 90%;
+            margin-top: 50px;
+            gap: 20px 20px;
+            /* box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px; */
+
+        }
+
+        #productcategory>div>img {
+            height: 70%;
+
+            width: 100%;
+            box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+            /* margin-top: 3px; */
+
+
+        }
+
+        #productcategory>div> {
+            transition: 0.5s;
+            position: relative;
+        }
+
+        #productcategory>div>:hover {
+            z-index: 1;
+            transform: scale(1.05);
+        }
+
+        .bewakoof {
+            height: 40px;
+            width: 90%;
+
+        }
+
+        button {
+            font-size: 18px !important;
+            background: #ffd84d;
+            border-color: transparent;
+            padding: 10px 60px;
+            border-radius: 10px;
+            font-family: montserrat-semibold, sans-serif !important;
+            cursor: pointer;
+
+            line-height: 17px !important;
+            color: #303030;
+            /* padding-left: 8px; */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="mainbox">
+        <div class="logo">
+            <a href="home.html"><img class="bewakoof"
+                    src="https://images.bewakoof.com/web/ic-desktop-pride-bwkf-logo.svg " alt=""></a>
+        </div>
+        <div class="categories">
+            <h3><a class="redirect" href="product1.html">MEN</a></h3>
+            <h3><a href="product2.html" class="redirect">WOMEN</a></h3>
+            <h3><a href="" class="redirect">MOBILE COVERS</a></h3>
+        </div>
+
+        <div class="lastbox">
+            <form action="">
+                <span><a><i class="fa-solid fa-magnifying-glass fa-lg"></i></a></span>
+                <input type="text" class="search" placeholder="Search by product, category or collection">
+
+            </form>
+            <span><a><i class="fa-solid fa-grip-lines-vertical fa-lg "></i></a></span>
+            <a href="" style="color: black" class="login redirect">Login</a>
+            <span><a href=""><i class="fa-solid fa-heart fa-lg redirect"></i></a></span>
+            <span><a href="cart.html"><i class="fa-solid fa-bag-shopping fa-lg redirect"></i></a></span>
+        </div>
+    </div>
+
+
+    <div class="home">
+        <p>Home / Men Clothing</p>
+    </div>
+
+
+    <div class="yellowimg">
+        <img src="https://images.bewakoof.com/uploads/category/desktop/freegift_desktop1440x250-1654857891.gif" alt="">
+    </div>
+
+    <div class="label">
+        <h3>Men Clothing (7871)</h3>
+    </div>
+
+
+
+    <!-- filter and products display starts from here -->
+    <div id="sortvalue">
+        <select id="filter" onChange="filtervalue()">
+            <option value="">Sort By</option>
+            <option value="nasc">Name Ascending</option>
+            <option value="ndsc">Name Descending</option>
+            <option value="pasc">Price Ascending</option>
+            <option value="pdsc">Price Descending</option>
+        </select>
+    </div>
+
+
+
+    <div id="productcategory">
+
+    </div>
+
+
+</body>
+
+</html>
+<script src="product1.js"></script>

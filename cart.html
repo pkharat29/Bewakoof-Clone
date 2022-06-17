@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="stylesheet" href="/bewakoof/css/all.min.css"> -->
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+    <style>
+        .home {
+            height: 40px;
+            border: 1px solid black;
+            display: flex;
+            align-items: center;
+            margin-top: 30px;
+        }
+
+        .home>p {
+            font-size: 16px;
+            color: #2D2D2D;
+            margin-top: 20px;
+            margin-left: 100px;
+            font-family: sans-serif;
+            cursor: pointer;
+        }
+
+        .yellowimg {
+            border: 1px solid blue;
+            margin: auto;
+            height: 200px;
+            width: 100%;
+
+
+        }
+
+        .yellowimg>img {
+            width: 100%;
+            height: 100%;
+        }
+
+        .fa-bag-shopping {
+            /* margin-right: -40px; */
+            margin-left: 20px;
+            font-size: 25px;
+            cursor: pointer;
+
+
+        }
+
+        .fa-heart {
+            font-size: 25px;
+            margin-left: 13px;
+            cursor: pointer;
+
+        }
+
+        .label>h3 {
+            color: rgb(45, 45, 45);
+            font: 700 16px montserrat-bold, sans-serif;
+            font-size: 25px;
+            margin-left: 150px;
+            margin-top: 40px;
+        }
+
+
+        /* grid styling starts here */
+
+
+        #productcategory {
+            /* border: 1px solid red; */
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            margin: auto;
+            width: 90%;
+            margin-top: 50px;
+            gap: 20px 20px;
+        }
+
+        #productcategory>div>img {
+            height: 60%;
+            width: 100%;
+            box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+            margin-top: 30px;
+
+
+        }
+
+        .bewakoof {
+            height: 40px;
+            width: 90%;
+
+        }
+
+        .brandlogo {
+            /* border: 2px solid blue; */
+            height: 50px;
+            width: 100%;
+
+        }
+
+        .mainhead {
+            width: 100%;
+            background: #fff;
+            height: 58px;
+            line-height: 52px;
+            border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+            position: relative;
+        }
+
+        a>img {
+            width: 30%;
+            height: 50%;
+        }
+
+        .mastercard {
+            /* border: 1px solid blue; */
+            margin: auto;
+            height: 30px;
+            width: 40%;
+            margin-top: 60px;
+        }
+
+        .mastercard>img {
+            width: 50%;
+            margin-left: 120px;
+        }
+
+        #sumbox {
+            background-color: #ffd84d;
+            width: 450px;
+            text-align: center;
+            height: 200px;
+            margin-left: 60%;
+            border-radius: 10px;
+        }
+
+        #sumbox>h1 {
+            color: rgb(62, 61, 61);
+            font-family: Poppins sans-serif;
+            font-weight: 700;
+            font-size: 38px;
+            padding-top: 25px;
+        }
+
+        #sumbox>h2 {
+            color: rgb(62, 61, 61);
+            font-family: Poppins sans-serif;
+            font-weight: 700;
+            font-size: 30px;
+            padding-top: 40px;
+        }
+
+        #submitbutton {
+            width: 450px;
+            text-align: center;
+            height: 50px;
+            margin-left: 60%;
+            margin-top: 10px;
+        }
+
+        #submitbutton>a {
+            text-decoration: none;
+
+        }
+
+        #submitbutton>a>button {
+            width: 450px;
+            height: 50px;
+            color: rgb(62, 61, 61);
+            font-family: Poppins sans-serif;
+            font-weight: 700;
+            font-size: 28px;
+            background-color: #ffd84d;
+            border-radius: 10px;
+            border-color: #fff;
+
+
+        }
+
+        #submitbutton>a>button:hover {
+
+            /* color: rgb(10, 11, 11);; */
+            font-family: Poppins sans-serif;
+            font-weight: 700;
+            font-size: 28px;
+            cursor: pointer;
+
+        }
+
+        #incdec {
+            display: flex;
+            /* justify-content: center; */
+            align-items: center;
+           
+            position: relative;
+            box-sizing: border-box;
+            /*background-color: #F8F8F8;*/
+            margin: 0;
+            padding: 0;
+            /* margin-left: 80px; */
+
+        }
+
+        /* button {
+            width: 32px;
+            height: 32px;
+         
+            border: none;
+            outline: none;
+            background-color: #F8F8F8;
+           
+            font-size: 20px;
+            cursor: pointer;
+           
+        } */
+        button{
+            font-family: montserrat-semibold, sans-serif !important;
+
+            font-size: 30px;
+            border: none;
+            outline: none;
+            background-color: #f4efef;
+            font-size: 20px;
+            cursor: pointer;
+            color: rgb(84, 86, 86);
+            border-radius: 10px;
+            padding: 5px 10px;
+           
+        }
+
+        #qntbox {
+            width: 30px;
+            height: 30px;
+            background-color: #F8F8F8;
+            outline: none;
+            border: 0px;
+            padding: 1px 2px;
+            font-size: 20px;
+            text-align: center;
+
+        }
+
+         #totalprice {
+            padding-top: 20px;
+            /* padding-left: 50px; */
+            font-size: 24px;
+            color: rgb(11, 19, 8);
+            font-family: Poppins sans-serif;
+            font-weight: 700;
+            line-height: 25px;
+            margin-top: -10px;
+        } 
+    </style>
+</head>
+
+<body>
+    <div class="mainhead">
+        <div class="brandlogo">
+            <a href="home.html"> <img src="https://images.bewakoof.com/web/ic-desktop-pride-bwkf-logo.svg " alt=""></a>
+        </div>
+    </div>
+    <!-- <div id="sortvalue"> -->
+    <!-- <select id="filter" onChange="filtervalue()">
+            <option value="">Sort By</option>
+            <option value="nasc">Name Ascending</option>
+            <option value="ndsc">Name Descending</option>
+            <option value="pasc">Price Ascending</option>
+            <option value="pdsc">Price Descending</option>
+        </select>
+    </div> -->
+
+
+
+    <div id="productcategory">
+
+    </div>
+
+    <div id="sumbox">
+
+    </div>
+
+    <div id="submitbutton">
+        <a href="payment.html"><button>PROCEED TO CHECKOUT</button></a>
+    </div>
+
+
+    <div class="mastercard">
+        <img src="https://images.bewakoof.com/web/secure-payments-image.png" alt="">
+    </div>
+
+
+
+
+
+</body>
+<script>
+    let productsCont = document.getElementById("productcategory");
+
+    var cartLS = JSON.parse(localStorage.getItem("cart-page")) || [];
+    console.log(cartLS)
+    displayproduct(cartLS)
+    var tprice = 0;
+    function displayproduct(productdata) {
+        productsCont.innerHTML = "";
+
+        productdata.forEach(function (elem) {
+
+
+            var box = document.createElement("div");
+            var img = document.createElement("img");
+            img.setAttribute("src", elem.avatar);
+
+            var brand = document.createElement("h2");
+            brand.innerText = elem.brand;
+
+            var name = document.createElement("p");
+            name.innerText = elem.name;
+
+            var price = document.createElement("h2");
+            price.innerText = elem.position;
+
+            var div5 = document.createElement("div")
+            div5.setAttribute("id", "incdec")
+
+            var inc = document.createElement("button")
+            inc.setAttribute("id", "inc")
+            inc.innerText = "+"
+            var dec = document.createElement("button")
+            dec.setAttribute("id", "dec")
+            dec.innerText = "-"
+            var x = document.createElement("input");
+            x.setAttribute("id", "qntbox")
+            x.setAttribute("type", "text");
+            x.setAttribute("value", "1");
+            div5.append(dec, x, inc)
+
+            var div6 = document.createElement("div")
+            div6.setAttribute("id", "totalprice")
+            var incprice = +(elem.position.replace("₹", ""))
+            console.log(incprice)
+            console.log(sum)
+            div6.append(incprice)
+            inc.addEventListener('click', () => {
+                x.value = Number(x.value) + 1;
+                div6.innerHTML = "";
+                tprice = incprice * x.value
+                div6.append(tprice)
+            });
+
+
+
+            dec.addEventListener('click', () => {
+                if (x.value <= 1) {
+                    x.value = 1;
+                    div6.innerHTML = "";
+                    tprice = incprice * x.value
+
+                    div6.append(tprice)
+
+                }
+                else {
+                    x.value = Number(x.value) - 1
+                    div6.innerHTML = "";
+                    tprice = incprice * x.value
+                    div6.append(tprice)
+                }
+            });
+
+
+
+
+
+            var DeleteCart = document.createElement("button");
+            DeleteCart.innerText = "Delete";
+            DeleteCart.addEventListener("click", function () {
+
+                Delete(elem.product_id);
+                window.location.reload();
+
+            })
+
+            box.append(img, brand, name, price, div5, div6, DeleteCart);
+
+            productsCont.append(box)
+
+
+        });
+    }
+
+    displayproduct(cartLS);
+    function Delete(id) {
+        let deleted = cartLS.filter(function (el) {
+            return el.product_id != id;
+        })
+
+
+        cartLS = deleted;
+        localStorage.setItem("cart-page", JSON.stringify(cartLS));
+        displayproduct(cartLS)
+
+    }
+    var sum = cartLS.reduce(function (acc, elem) {
+        return acc + Number(elem.position.replace("₹", ""))
+    }, 0)
+    var h2 = document.createElement("h2")
+    h2.innerText = "Subtotal: ₹" + sum
+    var h1 = document.createElement("h1")
+    h1.innerText = "Grand Total: ₹" + sum
+
+    document.querySelector("#sumbox").append(h2, h1)
+    console.log(sum)
+
+
+
+</script>
+
+</html>

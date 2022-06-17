@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="stylesheet" href="/bewakoof/css/all.min.css"> -->
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+    <style>
+        .mainbox {
+            height: 70px;
+            width: 90%;
+            display: flex;
+
+            /* border: 2px solid red; */
+            margin: auto;
+        }
+
+        .logo {
+            /* border: 2px solid black; */
+
+
+            width: 14%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .logo>img {
+
+            width: 100%;
+            cursor: pointer;
+        }
+
+        .categories {
+            display: flex;
+            /* justify-content: center; */
+            align-items: center;
+            gap: 0px;
+            height: auto;
+            /* border: 2px solid brown; */
+            width: 35%;
+            margin-left: 0px;
+
+        }
+
+        .secondbox {
+            /* border: 2px solid greenyellow; */
+            width: 24%;
+
+
+        }
+
+        .search {
+
+            width: 250px;
+            border: 1px solid #ccc;
+            padding: 10px 15px;
+            border-radius: 5px;
+            background-color: #EAEAEA;
+            margin-top: 30px;
+        }
+
+        .fa-solid {
+            margin-top: 15px;
+            cursor: pointer;
+
+        }
+
+        .redirect {
+            text-decoration: none;
+            color: #000000E6;
+        }
+
+        .categories>h3 {
+
+            margin-top: 20px;
+            color: #000000E6;
+            font-size: 13px;
+            font-family: montserrat, sans-serif;
+            vertical-align: middle;
+            /* line-height: 45px; */
+            padding: 0 11px;
+            letter-spacing: 1px;
+            position: relative;
+            cursor: pointer;
+            gap: 10px;
+            margin-left: 15px;
+
+
+
+        }
+
+        .lastbox {
+            /* border: 2px solid teal; */
+            width: 70%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 15px;
+            margin-left: 300px;
+        }
+
+        .login {
+            text-decoration: none;
+            color: #000000E6;
+            /* margin-left: -10px; */
+
+            width: auto;
+            padding: 0 10px;
+            line-height: 50px;
+
+            font-size: 16px;
+            font-family: montserrat, sans-serif;
+            cursor: pointer;
+        }
+
+        .fa-bag-shopping {
+
+            font-size: 25px;
+            cursor: pointer;
+            margin-left: 20px;
+
+
+        }
+
+        .fa-heart {
+            font-size: 25px;
+            /* margin-left: 13px; */
+            cursor: pointer;
+
+        }
+
+        .fa-grip-lines-vertical {
+            font-size: 25px;
+            cursor: pointer;
+
+        }
+
+        .search {
+
+            width: 250px;
+            border: 1px solid #ccc;
+            padding: 10px 15px;
+            border-radius: 5px;
+            margin-top: 10px;
+            background-color: #EAEAEA;
+        }
+
+
+        /* form styling starts here */
+
+        #container {
+
+            display: grid;
+            grid-template-rows: 10% 60%;
+            grid-template-columns: 40%;
+            margin: auto;
+            margin-top: 79px;
+            height: calc(100vh - 79px);
+            background-image: linear-gradient(0deg, #dac878, #fff);
+
+
+        }
+
+        #container>div:nth-child(1)>h2 {
+            text-align: center;
+        }
+
+        #email,
+        #pass,
+        #name {
+            width: 500px;
+            height: 29px;
+            padding: 5px 0;
+            font-size: 20px;
+            outline: none;
+            border: none;
+            border-bottom: 1px solid #bcbcbc;
+            border-radius: 0;
+            background: none;
+            box-shadow: none;
+            display: block;
+            margin-bottom: 60px;
+            line-height: normal;
+
+        }
+
+        #form>div {
+            margin-top: 10px;
+        }
+
+        .show-pass {
+            margin-top: 2.5%;
+            width: 14px;
+            height: 10px;
+        }
+
+        .forgotPassword button {
+            padding: 18px 0;
+            font-family: montserrat, sans-serif;
+            font-size: 15px;
+            color: #42a2a2;
+            background: none;
+            border: none;
+            margin-left: 190px;
+        }
+
+        h2 {
+            font-size: 20px;
+            font-family: montserrat-bold, sans-serif;
+            margin: 16px 0 35px;
+        }
+
+        .box>div>h2 {
+            text-align: center;
+            font-size: 25px;
+            font-family: montserrat-bold, sans-serif;
+            letter-spacing: 2.5px;
+        }
+
+        #login_password_submit {
+            width: 450px;
+            height: 50px;
+            border: none;
+            border-radius: 5px;
+            outline: none;
+            letter-spacing: .5px;
+            background-color: gray;
+            font-size: 16px;
+            font-family: montserrat, sans-serif;
+            color: #fff;
+            text-transform: uppercase;
+            margin-left: 5%;
+        }
+
+        .box {
+            display: grid;
+            width: 1100px;
+            height: 680px;
+            grid-template-rows: 20% 70%;
+            /* border: 2px solid red; */
+            margin-left: 66px;
+            justify-content: center;
+            background-color: white;
+
+        }
+
+        .box>div>h2 {
+            text-align: center;
+            font-size: 25px;
+            font-family: montserrat-bold, sans-serif;
+        }
+
+        .box>div:nth-child(1) {
+            height: 50px;
+        }
+
+        img {
+            width: 65%
+        }
+    </style>
+</head>
+
+<body>
+    <div class="mainbox">
+        <div class="logo">
+            <a href="home.html"> <img class="bewakoof"
+                    src="https://images.bewakoof.com/web/ic-desktop-pride-bwkf-logo.svg " alt=""></a>
+        </div>
+        <div class="categories">
+            <h3><a class="redirect" href="product1.html">MEN</a></h3>
+            <h3><a href="product2.html" class="redirect">WOMEN</a></h3>
+            <!-- <h3><a href="" class="redirect">MOBILE COVERS</a></h3> -->
+        </div>
+
+        <div class="lastbox">
+            <form action="">
+                <span><a><i class="fa-solid fa-magnifying-glass fa-lg"></i></a></span>
+                <input type="text" class="search" placeholder="Search by product, category or collection">
+
+            </form>
+            <span><a><i class="fa-solid fa-grip-lines-vertical fa-lg "></i></a></span>
+            <a href="" style="color: black" class="login redirect">Login</a>
+            <span><a href=""><i class="fa-solid fa-heart fa-lg redirect"></i></a></span>
+            <span><a href="cart.html"><i class="fa-solid fa-bag-shopping fa-lg redirect"></i></a></span>
+        </div>
+    </div>
+
+
+
+    <!-- form starts here -->
+
+
+    <div id="container">
+        <div class="box">
+            <div>
+                <h2> Login to your account</h2>
+            </div>
+            <div>
+                <form onsubmit="signup(event)" id="form">
+                    <div>
+                        <input type="text" id="name" name="name" placeholder="name" value>
+
+                    </div>
+                    <div>
+                        <input type="text" id="email" name="email" placeholder="Email" value>
+
+                    </div>
+                    <div>
+                        <input type="password" id="pass" name="pass" placeholder="Password" value>
+
+                    </div>
+                    <div class="forgotPassword">
+                        <button type="button" id="forgot_password_link">Forgot Password?</button>
+                    </div>
+                    <div id="d1">
+                        <button id="login_password_submit" type="submit">Sign up</button></a>
+                    </div>
+
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+<script>
+    let name = document.getElementById("name")
+    name.innerHTML = "Login"
+
+
+    function signup(e) {
+        e.preventDefault();
+
+        let form = document.getElementById("form");
+
+        let name = document.getElementById("name")
+        let email = document.getElementById("email");
+        let pass = document.getElementById("pass");
+
+        let Name = name.value
+        let Email = email.value;
+        let password = pass.value;
+
+        let all_users = JSON.parse(localStorage.getItem("users"));
+
+        var count = 0;
+        all_users.forEach(function (user) {
+
+            if (Name === user.Name && Email === user.Email && password === user.password && count == 0) {
+
+                alert("logged in succesfully");
+                name.innerHTML = user.Name
+                count++
+                window.location.href = "home.html"
+            }
+
+        })
+        if (count == 0) {
+            alert("Invalid Credentials")
+        }
+
+
+    }
+</script>
+
+</html>

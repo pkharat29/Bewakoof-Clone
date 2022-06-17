@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
+    <title>Document</title>
+    <style>
+        header {
+            width: 100vw;
+            min-height: 100vh;
+            background: #34495e;
+            font-size: 1.2rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+        }
+
+        .container {
+            background-color: white;
+            max-width: 800px;
+            min-height: 500px;
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            padding: 0.5rem 1.5rem;
+        }
+
+        .left {
+            flex-basis: 50%;
+        }
+
+        .right {
+            flex-basis: 50%;
+        }
+
+        form {
+            padding: 1.5rem;
+        }
+
+        form input[type="text"] {
+            width: 100%;
+            padding: 0.5rem 0.7rem;
+            margin: 0.5rem 0;
+            outline: none;
+        }
+
+        #zip {
+            display: flex;
+            margin-top: 0.5rem;
+        }
+
+        #zip select {
+            padding: 0.5rem 0.7rem;
+        }
+
+        #zip input[type="number"] {
+            padding: 0.5rem 0.7rem;
+            margin-left: 5px;
+        }
+
+        input[type="submit"] {
+            width: 100%;
+            padding: 0.7rem 1.5rem;
+            background: #34495e;
+            color: white;
+            border: none;
+            outline: none;
+            margin-top: 1rem;
+            cursor: pointer;
+        }
+
+        input[type="submit"] :hover {
+            background: #2c3e50;
+        }
+
+        /* #submit{
+            width: 100%;
+            padding: 0.7rem 1.5rem;
+            background: #34495e;
+            color: white;
+            border: none;
+            outline: none;
+            margin-top: 1rem;
+            cursor: pointer;
+        }
+        #submit:hover{
+            background: #2c3e50; 
+        } */
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <div class="left">
+                <h3>Billing Address</h3>
+                <form action="">
+                    Full Name
+                    <input type="text" name="" placeholder="Enter name">
+                    Email
+                    <input type="text" name="" placeholder="Enter email">
+                    Address
+                    <input type="text" name="" placeholder="Enter address">
+                    City
+                    <input type="text" name="" placeholder="Enter City">
+
+                    <div id="zip">
+                        <label for="">
+                            State
+                            <select name="" id="">
+                                <option value="">Choose State</option>
+                                <option value="">Maharashtra</option>
+                                <option value="">Goa</option>
+                                <option value="">Madhya Pradesh</option>
+                                <option value="">Gujarat</option>
+                                <option value="">Uttar Pradesh</option>
+                            </select>
+                        </label>
+                        <label for="">
+                            Zip Code
+                            <input type="number" placeholder="zip code">
+                        </label>
+                    </div>
+                </form>
+            </div>
+            <div class="right">
+                <h3>Payment</h3>
+                <form action="">
+                    Accepted cards
+                    <input type="text" name="" placeholder="Visa and Mastercard">
+                    Credit card Number
+                    <input type="text" name="" placeholder="enter card number">
+                    Expiry Month
+                    <input type="text" name="" placeholder="Enter month">
+
+
+                    <div id="zip">
+                        <label for="">
+                            Expiry year
+                            <select name="" id="">
+                                <option value="">2022</option>
+                                <option value="">2023</option>
+                                <option value="">2024</option>
+                                <option value="">2025 </option>
+                                <option value="">2026</option>
+                                <option value=""> 2027</option>
+                            </select>
+                        </label>
+                        <label for="">
+                            Enter CVV
+                            <input type="number" placeholder="CVV">
+                        </label>
+                    </div>
+
+                </form>
+                <input id="sbmt" type="submit" value="Place order">
+
+                <!-- <p id="submit">Place Order</p> -->
+            </div>
+        </div>
+    </header>
+</body>
+<script>
+    document.getElementById("sbmt").addEventListener("click", myfunction)
+
+    function myfunction() {
+        swal("Great!", "Order Placed!", "success");
+    }
+</script>
+
+</html>
